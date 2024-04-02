@@ -6,21 +6,6 @@ Este projeto tem como foco o estudo prático de algoritmos de busca e ordenaçã
 
 A biblioteca está estruturada da seguinte forma:
 
-projeto/
-│
-├── algoritmos/
-│ ├── init.py
-│ ├── ordenacao.py
-│ └── busca.py
-│
-├── testes/
-│ ├── init.py
-│ ├── test_ordenacao.py
-│ └── test_busca.py
-│
-└── main.py
-
-
 - O pacote `algoritmos` contém módulos para ordenação (`ordenacao.py`) e busca (`busca.py`).
 - O pacote `testes` contém módulos para testar os algoritmos de ordenação e busca.
 - `main.py` é a aplicação principal onde a biblioteca personalizada é utilizada como um módulo.
