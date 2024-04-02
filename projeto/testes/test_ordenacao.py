@@ -1,5 +1,6 @@
-from algoritmos.ordenacao import bubble_sort, selection_sort, insertion_sort, merge_sort, quick_sort
-
+import sys
+sys.path.insert(0, 'C:/Users/William/Desktop/PYTHON/CP4-python/projeto/algoritmos')
+import ordenacao
 # Vetores fornecidos
 vetor_ordenado_crescente = [3, 7, 33, 59, 71]
 vetor_nao_ordenado = [71, 7, 3, 9, 7]
@@ -16,47 +17,50 @@ def testar_ordenacao(algoritmo, vetor):
     print(f"Vetor ordenado: {vetor_ordenado}\n")
 
 # Testando cada algoritmo com cada vetor
-testar_ordenacao(bubble_sort, vetor_ordenado_crescente)
-testar_ordenacao(bubble_sort, vetor_nao_ordenado)
-testar_ordenacao(bubble_sort, vetor_ordenado_descrescente)
-testar_ordenacao(bubble_sort, vetor_vazio)
-testar_ordenacao(bubble_sort, vetor_com_um_elemento)
-testar_ordenacao(bubble_sort, vetor_com_elementos_repetidos)
-testar_ordenacao(bubble_sort, vetor_com_elementos_negativos)
+testar_ordenacao(ordenacao.bubble_sort, vetor_ordenado_crescente)
+testar_ordenacao(ordenacao.bubble_sort, vetor_nao_ordenado)
+testar_ordenacao(ordenacao.bubble_sort, vetor_ordenado_descrescente)
+testar_ordenacao(ordenacao.bubble_sort, vetor_vazio)
+testar_ordenacao(ordenacao.bubble_sort, vetor_com_um_elemento)
+testar_ordenacao(ordenacao.bubble_sort, vetor_com_elementos_repetidos)
+testar_ordenacao(ordenacao.bubble_sort, vetor_com_elementos_negativos)
 
-testar_ordenacao(selection_sort, vetor_ordenado_crescente)
-testar_ordenacao(selection_sort, vetor_nao_ordenado)
-testar_ordenacao(selection_sort, vetor_ordenado_descrescente)
-testar_ordenacao(selection_sort, vetor_vazio)
-testar_ordenacao(selection_sort, vetor_com_um_elemento)
-testar_ordenacao(selection_sort, vetor_com_elementos_repetidos)
-testar_ordenacao(selection_sort, vetor_com_elementos_negativos)
+testar_ordenacao(ordenacao.selection_sort, vetor_ordenado_crescente)
+testar_ordenacao(ordenacao.selection_sort, vetor_nao_ordenado)
+testar_ordenacao(ordenacao.selection_sort, vetor_ordenado_descrescente)
+testar_ordenacao(ordenacao.selection_sort, vetor_vazio)
+testar_ordenacao(ordenacao.selection_sort, vetor_com_um_elemento)
+testar_ordenacao(ordenacao.selection_sort, vetor_com_elementos_repetidos)
+testar_ordenacao(ordenacao.selection_sort, vetor_com_elementos_negativos)
 
-testar_ordenacao(insertion_sort, vetor_ordenado_crescente)
-testar_ordenacao(insertion_sort, vetor_nao_ordenado)
-testar_ordenacao(insertion_sort, vetor_ordenado_descrescente)
-testar_ordenacao(insertion_sort, vetor_vazio)
-testar_ordenacao(insertion_sort, vetor_com_um_elemento)
-testar_ordenacao(insertion_sort, vetor_com_elementos_repetidos)
-testar_ordenacao(insertion_sort, vetor_com_elementos_negativos)
+testar_ordenacao(ordenacao.insertion_sort, vetor_ordenado_crescente)
+testar_ordenacao(ordenacao.insertion_sort, vetor_nao_ordenado)
+testar_ordenacao(ordenacao.insertion_sort, vetor_ordenado_descrescente)
+testar_ordenacao(ordenacao.insertion_sort, vetor_vazio)
+testar_ordenacao(ordenacao.insertion_sort, vetor_com_um_elemento)
+testar_ordenacao(ordenacao.insertion_sort, vetor_com_elementos_repetidos)
+testar_ordenacao(ordenacao.insertion_sort, vetor_com_elementos_negativos)
 
-testar_ordenacao(merge_sort, vetor_ordenado_crescente)
-testar_ordenacao(merge_sort, vetor_nao_ordenado)
-testar_ordenacao(merge_sort, vetor_ordenado_descrescente)
-testar_ordenacao(merge_sort, vetor_vazio)
-testar_ordenacao(merge_sort, vetor_com_um_elemento)
-testar_ordenacao(merge_sort, vetor_com_elementos_repetidos)
-testar_ordenacao(merge_sort, vetor_com_elementos_negativos)
+testar_ordenacao(ordenacao.merge_sort, vetor_ordenado_crescente)
+testar_ordenacao(ordenacao.merge_sort, vetor_nao_ordenado)
+testar_ordenacao(ordenacao.merge_sort, vetor_ordenado_descrescente)
+testar_ordenacao(ordenacao.merge_sort, vetor_vazio)
+testar_ordenacao(ordenacao.merge_sort, vetor_com_um_elemento)
+testar_ordenacao(ordenacao.merge_sort, vetor_com_elementos_repetidos)
+testar_ordenacao(ordenacao.merge_sort, vetor_com_elementos_negativos)
 
-testar_ordenacao(quick_sort, vetor_ordenado_crescente)
-testar_ordenacao(quick_sort, vetor_nao_ordenado)
-testar_ordenacao(quick_sort, vetor_ordenado_descrescente)
-testar_ordenacao(quick_sort, vetor_vazio)
-testar_ordenacao(quick_sort, vetor_com_um_elemento)
-testar_ordenacao(quick_sort, vetor_com_elementos_repetidos)
-testar_ordenacao(quick_sort, vetor_com_elementos_negativos)
+testar_ordenacao(ordenacao.quick_sort_wrapper, vetor_ordenado_crescente)
+testar_ordenacao(ordenacao.quick_sort_wrapper, vetor_nao_ordenado)
+testar_ordenacao(ordenacao.quick_sort_wrapper, vetor_ordenado_descrescente)
+testar_ordenacao(ordenacao.quick_sort_wrapper, vetor_vazio)
+testar_ordenacao(ordenacao.quick_sort_wrapper, vetor_com_um_elemento)
+testar_ordenacao(ordenacao.quick_sort_wrapper, vetor_com_elementos_repetidos)
+testar_ordenacao(ordenacao.quick_sort_wrapper, vetor_com_elementos_negativos)
 
-
-# se nao der certo precisa tentar no terminal do windows, so colar esse codigo
-#set PYTHONPATH=%PYTHONPATH%;c:\Users\William\Desktop\PYTHON\CP4-python\projeto\testes\test_ordenacao.py
-#python c:\Users\William\Desktop\PYTHON\CP4-python\projeto\testes\test_ordenacao.py
+testar_ordenacao(ordenacao.partition_wrapper, vetor_ordenado_crescente)
+testar_ordenacao(ordenacao.partition_wrapper, vetor_nao_ordenado)
+testar_ordenacao(ordenacao.partition_wrapper, vetor_ordenado_descrescente)
+testar_ordenacao(ordenacao.partition_wrapper, vetor_vazio)
+testar_ordenacao(ordenacao.partition_wrapper, vetor_com_um_elemento)
+testar_ordenacao(ordenacao.partition_wrapper, vetor_com_elementos_repetidos)
+testar_ordenacao(ordenacao.partition_wrapper, vetor_com_elementos_negativos)

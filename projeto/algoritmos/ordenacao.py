@@ -54,16 +54,27 @@ def merge_sort(lista):
 def quick_sort(lista, low, high):
     if low < high:
         pi = partition(lista, low, high)
-        quick_sort(lista, low, pi-1)
-        quick_sort(lista, pi+1, high)
+        quick_sort(lista, low, pi - 1)
+        quick_sort(lista, pi + 1, high)
     return lista
+
+def quick_sort_wrapper(lista):
+    return quick_sort(lista, 0, len(lista) - 1)
 
 def partition(lista, low, high):
     pivot = lista[high]
     i = low - 1
     for j in range(low, high):
-        if lista[j] < pivot:
+        if lista[j] <= pivot:
             i += 1
             lista[i], lista[j] = lista[j], lista[i]
     lista[i+1], lista[high] = lista[high], lista[i+1]
     return i + 1
+   
+
+def partition_wrapper(vetor):
+    if len(vetor) == 0:
+        print("A lista está vazia, não é possível particionar.")
+        return vetor
+    return partition(vetor, 0, len(vetor) - 1)
+
